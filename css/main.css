@@ -4,32 +4,44 @@ body{
     padding-top:0;
 }
 
+/*Top image section*/
+
 .my-container {
     background-image:url("../img/uCInUkw.png");
-    position: fixed;
-    width:100%;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    background-attachment:fixed;
 }
 .my-container h1 {
     color:white;
     font-size:6.6em;
-    padding: 40px;
-    position: relative;
+    position: absolute;
     z-index: 2;
-    height:700px;
 } 
 
 .my-container p{
     color:white;
     font-size:3.6em;
-    padding: 40px;
-    position: relative;
-    padding-left:40px;
+    padding-top: 60%;
+    position: absolute;
+}
+.overlay{
+    position: absolute;
+    width: 1140px;
+    top: 5%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);   
 }
 
+/*portfolio section*/
 
-
-
+.thumb-container{
+    background-color:#212121;
+    color:white;
+}
 
 
 
