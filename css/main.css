@@ -1,18 +1,18 @@
 
 body{
     background-color:black;
+    background-image:url("../img/uCInUkw.png");
+    background-size: cover;
+    background-position: center;
     padding-top:0;
 }
 
 /*Top image section*/
 
 .my-container {
-    background-image:url("../img/uCInUkw.png");
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
     height:100vh;
-    background-attachment:fixed;
+    background-attachment:scroll;
 }
 .my-container h1 {
     color:white;
@@ -35,20 +35,19 @@ body{
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);   
 }
-
+.image-overlay{
+    position: absolute;
+    margin-top:10%;
+    margin-left:50%;
+    z-index: 3;
+    width:100%;
+}
 /*portfolio section*/
 
 .thumb-container{
     background-color:#212121;
     color:white;
 }
-
-
-
-
-
-
-
 
 
 

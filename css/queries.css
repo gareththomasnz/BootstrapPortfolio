@@ -1,0 +1,79 @@
+/* big tablet to 1200*/
+@media only screen and (max-width: 1200px){
+ .my-container h1 {
+    color:white;
+    font-size:5.6em;
+    position: absolute;
+    left: 35%;
+    z-index: 2;
+} 
+  
+.overlay{
+    position: absolute;
+    width: 1000px;
+    top: 5%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);   
+}
+}
+
+
+/*small tablet to big tablet 768 to 1023*/
+@media only screen and (max-width: 1023px){
+ .my-container h1 {
+    color:white;
+    font-size:4.6em;
+    position: absolute;
+    left: 55%;
+    z-index: 2;
+}
+.overlay{
+    position: absolute;
+    width: 750px;
+    top: 5%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);   
+}
+}
+
+/*small phones to small tablets 481 to 767*/
+@media only screen and (max-width: 767px){
+ .my-container h1 {
+    color:white;
+    font-size:3.6em;
+    position: absolute;
+    left: 55%;
+    z-index: 2;
+} 
+
+.overlay{
+    position: absolute;
+    width: 480px;
+    top: 5%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);   
+}
+}
+
+
+/*small phones 0 to 480px*/
+@media only screen and (max-width: 480px){
+ .my-container h1 {
+    color:white;
+    font-size:2.6em;
+    position: absolute;
+    left: 55%;
+    z-index: 2;
+} 
+ .overlay{
+    position: absolute;
+    width: 300px;
+    top: 5%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);   
+} 
+}
