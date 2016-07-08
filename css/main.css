@@ -1,56 +1,52 @@
-
-body{
-    background-color:black;
-    background-image:url("../img/uCInUkw.png");
-    background-size: cover;
-    background-position: center;
-    padding-top:0;
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 50%;
+    /* ie8- graceful degradation */
+    background-position:50% 50%\9 !important;
 }
 
-/*Top image section*/
-
-.my-container {
-    overflow: hidden;
-    height:100vh;
-    background-attachment:scroll;
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
 }
-.my-container h1 {
-    color:white;
-    font-size:6.6em;
-    position: absolute;
-    z-index: 2;
-} 
-
-.my-container p{
-    color:white;
-    font-size:3.6em;
-    padding-top: 60%;
-    position: absolute;
-}
-.overlay{
-    position: absolute;
-    width: 1140px;
-    top: 5%;
-    left: 35%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);   
-}
-.image-overlay{
-    position: absolute;
-    margin-top:10%;
-    margin-left:50%;
-    z-index: 3;
+.fullscreen,
+.content-a {
     width:100%;
+    height:100%;
+    overflow:hidden;
 }
-/*portfolio section*/
-
-.thumb-container{
-    background-color:#212121;
-    color:white;
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
 }
 
+/* content centering styles */
+.content-a {
+	display:table;
+}
+.content-b {
+	display:table-cell;
+    position:relative;
+	vertical-align:middle;
+	text-align:center;
+}
 
-
-
-
-
+/* visual styles */
+body{
+    margin:0;
+    font-family:sans-serif;
+    font-size:28px;
+    line-height:100px;
+	color:#ffffff;
+    text-align:center;
+}
+section {
+	background:#212121;
+}
+.not-fullscreen {
+    height:50%;
+}
