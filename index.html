@@ -13,6 +13,43 @@
   
 <body>
 
+<!--Navigation section-->
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">My Portfolio</a>
+    </div>
+    <div class="collapse  navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle"   data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Mobile development</a></li>
+            <li><a href="#">Software Development</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+    
+<!--End Navigation section--> 
+
 <div class="fullscreen background" style="background-image:url('img/uCInUkw.png'); background-color:black;" data-img-width="1600" data-img-height="1064">
     <div class="content-a">
         <div class="content-b">
@@ -93,6 +130,11 @@
         </div>
     </div>
 </section>
-  
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>  
 </body>
 </html>
